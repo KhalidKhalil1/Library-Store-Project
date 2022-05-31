@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--mainBeigeColor);
+}
+
+.navbar-side {
+    transition: all 0.5s;
+}
+
+header {
+    height: 90px;
+}
+
+.fixed-menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 90px;
+    background-color: var(--mainBeigeColor);
+    z-index: 9;
+}
+
+#mainNav a {
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+
+.navbar-side {
+    width: 375px;
+    position: absolute;
+    z-index: 9999;
+    opacity: 90%;
+    width: 100%;
+    background-color: #241400;
+    left: -200rem;
+}
+
+#book-img {
+    object-fit: cover !important;
+}
+
+.link-header p {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    margin: 7px;
+}
+
+.link-footer a {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    color: #fff;
+    margin: 6px;
+}
+
+.navbar-for-footer {
+    display: none !important;
+}
+
+#mainNav {
+    padding: 0px 1rem;
+}
+
+#mainNav a:hover {
+    color: #E16A00 !important;
+    border-bottom: 1px solid #E16A00 !important;
+}
+
+#mainNav a:focus {
+    color: #E16A00 !important;
+    border-bottom: 1px solid #E16A00 !important;
+}
+
+.navbar-nav .nav-item a {
+    border: 1px solid transparent;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #E16A00 !important;
+    border-bottom: 1px solid #E16A00 !important;
+}
+
+.navbar-nav .nav-item a:focus {
+    color: #E16A00 !important;
+    border-bottom: 1px solid #E16A00 !important;
+}
+
+.links a:hover {
+    text-decoration: none !important;
+    color: #E16A00;
+}
+
+.line {
+    width: 80%;
+    background-color: #fff;
+    height: 1px;
+}
+
+#toggleBtn, #x-btn {
+   cursor: pointer;
+}
+
+@media (max-width: 1210px) {
+    .logo-section {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        display: none;
+    }
+
+    .icons a:not(#fb):not(#tw):not(#inst) {
+        display: none;
+    }
+
+    .links {
+        display: none !important;
+    }
+
+    .footerConnnection {
+        display: none !important;
+    }
+
+    #rightsReserved {
+        display: none !important;
+    }
+
+    .rightsDiv {
+        display: block !important;
+    }
+
+    .logo-section-admin {
+        display: none !important;
+    }
+
+    #toggleBtn {
+        display: block;
+    }
+
+    .navbar-for-footer {
+        display: block !important;
+    }
+}

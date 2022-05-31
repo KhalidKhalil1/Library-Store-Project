@@ -1,0 +1,60 @@
+#loginPage {
+    overflow: hidden;
+    background: var(--mainRedColor);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.login-img {
+    margin-top: 20px;
+    height: 80px;
+}
+
+.login-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 500px;
+    height: 350px;
+    padding: 50px;
+}
+
+.login-section form h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.login-section form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 400px;
+}
+
+.login-section form button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--mainOrangeColor);
+    color: #fff;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+    .login-img {
+        height: 60px;
+    }
+    .login-section {
+        width: 80%;
+        padding: 30px;
+    }
+    .login-section form h2 {
+        font-size: 25px;
+    }
+}

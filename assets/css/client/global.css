@@ -1,0 +1,8 @@
+/* General */
+@import url('../reset.css');
+@import url('../font.css');
+@import url('../variable.css');
+
+/* Layouts */
+@import url('../client/layouts/header.css');
+@import url('../client/layouts/footer.css');

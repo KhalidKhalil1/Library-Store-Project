@@ -1,0 +1,199 @@
+.search-section {
+    margin: 100px 0;
+}
+
+.search-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-row {
+    margin-top: 44px;
+}
+
+.form-section {
+    padding-right: 90px;
+}
+
+.search-form input {
+    padding: 27px;
+    border: 1px solid #CECECE;
+    border-radius: 5px;
+    font-size: 23px;
+    color: var(--catalogBlackColor);
+    font-weight: 400;
+    font-family: 'Crimson Pro', serif;
+    margin-bottom: 44px;
+}
+
+.search-form button {
+    background-color: var(--mainOrangeColor);
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 400;
+    font-size: 30px;
+    transition: .3s all ease-in-out;
+}
+
+.search-form button:hover {
+    background-color: #c85e02;
+    color: #fff;
+}
+
+.slider-section {
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 lightgray;
+    padding: 47px 31px;
+}
+
+.book-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 47px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--catalogBlackColor);
+}
+
+.author-name {
+    font-weight: 400px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    color: var(--catalogBlackColor);
+}
+
+.book-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.img-section {
+    padding-right: 30px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.img-section img {
+    width: 100%;
+}
+
+.card-new {
+    background-color: #EB5757;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    font-weight: 900;
+    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    line-height: 18px;
+    padding: 0 12px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 0 rgba(225, 106, 0, 0.19);
+}
+
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-control-prev-icon {
+    margin-left: -150px;
+    background-image: url(../../../img/left-arrow.svg);
+    height: 46px;
+}
+
+.carousel-control-next-icon {
+    margin-right: -150px;
+    background-image: url(../../../img/right-arrow.svg);
+    height: 46px;
+}
+
+@media only screen and (max-width: 992px) {
+    .form-section {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .search-section {
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    .slider-section {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .img-section {
+        margin-top: 0;
+    }
+
+    .img-section img {
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .book-name {
+        text-align: center;
+    }
+
+    .author-name {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .book-description {
+        text-align: center;
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .search-title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .search-form input {
+        padding: 10px 15px;
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .search-form button {
+        font-size: 16px;
+    }
+
+    .search-row {
+        margin-top: 24px;
+    }
+
+    .card-new {
+        left: 22%;
+        padding: 0 12px;
+    }
+
+    .carousel-item {
+        height: auto;
+    }
+
+    .carousel-control-prev-icon {
+        margin-left: -50px;
+        background-image: url(../../../img/left-arrow.svg);
+        height: 46px;
+    }
+    
+    .carousel-control-next-icon {
+        margin-right: -50px;
+        background-image: url(../../../img/right-arrow.svg);
+        height: 46px;
+    }
+}

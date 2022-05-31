@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/client/global.css">
+    <link rel="stylesheet" href="./assets/css/client/pages/about.css">
+    <title>About store | Library Book Store</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="fixed-menu">
+            <nav class="navbar-side">
+                <div class="mt-2 mr-3" id="navbarText">
+
+                    <div class='d-flex align-items-end justify-content-end '>
+                        <img src="./assets/img/x.svg" id='x-btn' class='d-flex align-items-end mt-5 ' alt="">
+                    </div>
+                    <ul class="navbar-nav d-flex align-items-end mt-5">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="./catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="./about.html">About Store</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="./contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="./search.html">Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav class="">
+                <div class="container-fluid flex-row d-flex align-items-center justify-content-between pt-4"
+                    id="header">
+                    <div class="logo-section ml-lg-5 pl-lg-5">
+                        <img id='logo-img' class='ml-lg-5' src="./assets/img/logo-client.svg" alt="img">
+                    </div>
+                    <div id="mediaJoin" class=" ml-auto mr-4 mt-1"></div>
+                    <nav class="navbar navbar-expand-lg navbar-white mr-5" id='mainNav'>
+                        <div class="mr-2" id="navbarText">
+                            <ul class="navbar-nav mr-auto ">
+                                <li class="nav-item mx-lg-1">
+                                    <a class="nav-link active text-dark" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item mx-lg-1">
+                                    <a class="nav-link active text-dark" href="./catalog.html">Catalog</a>
+                                </li>
+                                <li class="nav-item mx-lg-1">
+                                    <a class="nav-link active text-dark" href="./about.html">About Store</a>
+                                </li>
+                                <li class="nav-item mx-lg-1 active">
+                                    <a class="nav-link text-dark" href="./contact.html">Contact us</a>
+                                </li>
+                                <li class="nav-item mx-lg-1">
+                                    <a class="nav-link active text-dark" href="./search.html">Search</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <img src="./assets/img/toggleBtn.svg" id='toggleBtn' alt="">
+                    <div class="d-flex flex-row logo-section-admin pl-5 mr-lg-4">
+                        <img id='logo-img' src="./assets/img/adminIcon.svg" class='mr-lg-2' alt="img">
+                        <div class='d-flex flex-column' id='f12'>
+                            <a class='logo-sec-title text-dark text-decoration-none' id="joinUs" href="#"
+                                data-toggle="modal" data-target="#loginModal">Join us</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Join Us -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mb-4">
+                        <div class="form-title text-center">
+                            <h4 style="font-size:44px; font-weight: 900">Join Us</h4>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <form class="mt-4 mb-0 mx-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="joinFullName" placeholder="Fullname"
+                                        style='height:76px; font-size: 19px; font-family: "Crimson Pro", serif;'>
+                                </div>
+                                <div id="alertJoinFirst" class="alert alert-danger d-none" role="alert">
+                                    Please check form
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="joinEmail" placeholder="Email"
+                                        style='height:76px; font-size: 19px; font-family: "Crimson Pro", serif;'>
+                                </div>
+                                <div id="alertJoinSecond" class="alert alert-danger d-none" role="alert">
+                                    Please check form
+                                </div>
+                                <button type="button" class="btn btn-block text-white" id="addJoin"
+                                    style='background-color:#e16a00; margin-top:3rem;height:76px;font-size: 19px; font-family: "Crimson Pro", serif;'>Join</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Join Us -->
+        <section class="about-section">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 order-lg-1 order-md-2 order-sm-2 order-2">
+                    <h2 class="about-title"></h2>
+                    <p class="about-description"></p>
+                </div>
+                <div class="col-lg-5 col-md-12 order-lg-2 order-md-1 order-sm-1 order-1">
+                    <div class="about-img">
+                        <div class="loadingSpinner">
+                            <img src="./assets/img/spinner.gif" style="width: 200px;"
+                                class="m-auto d-block rounded-circle" alt="">
+                        </div>
+                        <img class="d-block m-auto" src="" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <div class="social-icons d-flex flex-column align-items-center" id='social-icons-contact'>
+        <h3 class='text-center mb-4' style="font-weight: 900;">Follow us on social media</h3>
+        <div class="icons">
+            <a class="mx-2 mx-lg-1" id='fb' href=""><img src="./assets/img/fb.png" alt=""></a>
+            <a class="mx-2 mx-lg-1" id='tw' href=""><img src="./assets/img/tw.png" alt=""></a>
+            <a class="mx-2 mx-lg-1" id='inst' href=""><img src="./assets/img/inst.png" alt=""></a>
+        </div>
+    </div>
+
+    <footer class='container-fluid d-flex flex-column justify-content-center mt-5 px-0'>
+        <div
+            class="footerItems d-flex flex-lg-row flex-column justify-content-between align-items-center pt-5 px-lg-5 px-4">
+            <img src="./assets/img/newWhiteLogo.svg"
+                class='col-lg-3 d-flex col-md-6 col-sm-6 justify-content-end ml-lg-5 pl-lg-5' alt="">
+            <div class="links d-flex col-lg-5 justify-content-around">
+                <section class="links-1">
+                    <div class="link-header">
+                        <p class='font-weight-bolder text-white'>Popular</p>
+                    </div>
+                    <div class="link-footer d-flex flex-column">
+                        <a href="">Programming</a>
+                        <a href="">Books for children</a>
+                        <a href="">Psychology</a>
+                        <a href="">Business</a>
+                    </div>
+                </section>
+                <section class="links-2">
+                    <div class="link-header">
+                        <p class='font-weight-bolder text-white'>Information</p>
+                    </div>
+                    <div class="link-footer d-flex flex-column">
+                        <a href="">Delivery</a>
+                        <a href="">About the store</a>
+                        <a href="">Payment</a>
+                    </div>
+                </section>
+                <section class="links-3">
+                    <div class="link-header">
+                        <p class='font-weight-bolder text-white'>Help</p>
+                    </div>
+                    <div class="link-footer d-flex flex-column">
+                        <a href="">Contacts</a>
+                        <a href="">Purchase returns</a>
+                        <a href="">Buyer help</a>
+                    </div>
+                </section>
+            </div>
+            <nav class="navbar-for-footer navbar-white">
+                <div class="" id="navbarText">
+                    <ul class="navbar-nav flex-row ">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active text-white" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active text-white" href="./catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active text-white" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item mx-1 active">
+                            <a class="nav-link text-white" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active text-white" href="./search.html">Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footerConnnection col-2 d-flex flex-column align-items-center flex-end mr-5">
+                <p class='text-white' style='font-size:12px;font-weight:900'>+994 (55) 844-77-55</p>
+                <button class="btn" style='color:#e16a00;'>Request a call</button>
+            </div>
+        </div>
+        <p class='text-center flex-end mt-5 text-white copyright' id='rightsReserved'>All rights reserved © 2003-2021
+            LIBRARY TERMS OF USE | Privacy Policy</p>
+        <div class='rightsDiv d-flex flex-column justify-content-center align-items-center'>
+            <div class='line mx-auto mt-5'></div>
+            <p class='text-center flex-end mt-2 text-white mx-auto' id='rightsReservedShort'
+                style='font-size:12px; font-weight:200'>Library BookStore EACamp © 2003-2021</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script src="./assets/js/db.js"></script>
+<script src="./assets/js/client/about.js"></script>
+<script src="./assets/js/client/join.js"></script>
+
+</html>

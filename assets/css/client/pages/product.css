@@ -1,0 +1,222 @@
+.single-book-section {
+    margin-top: 100px;
+}
+
+.back-btn {
+    background-color: var(--mainOrangeColor);
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 29px;
+    width: 100px;
+    height: 29px;
+    display: inline-block;
+    transition: .3s all ease-in-out;
+}
+
+.back-btn:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #c85e02;
+}
+
+.book-info .year-text {
+    background-color: #2F80ED;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 23px;
+    width: 69px;
+    height: 23px;
+    transition: .3s all ease-in-out;
+    margin-top: 80px;
+}
+
+.book-info .book-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 69px;
+    color: var(--catalogBlackColor);
+}
+
+.book-info .book-days {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 31px;
+    margin-top: -10px;
+    display: block;
+    color: var(--catalogBlackColor);
+}
+
+.book-info .author-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 43px;
+    color: var(--catalogBlackColor);
+}
+
+.book-info .book-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    color: var(--catalogBlackColor);
+}
+
+.book-img {
+    padding-left: 100px;
+}
+
+.book-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.comment-section {
+    margin-top: 100px;
+}
+
+.comment-form {
+    margin-bottom: 50px;
+}
+
+.comment-section input {
+    margin-right: 18px;
+    padding: 30px 38px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 10px 0 lightgray;
+}
+
+.comment-section button {
+    border-radius: 5px;
+    background-color: var(--mainOrangeColor);
+    color: #fff;
+    border: none;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.comment-section button img {
+    width: 28px;
+}
+
+.comment-card {
+    background-color: #fff;
+    padding: 30px 18px;
+    box-shadow: 0 0 10px 0 lightgray;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.comment-author {
+    color: #232323;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.comment-time, .comment-body {
+    color: #232323;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin-top: 17px;
+}
+
+.social-icons {
+    margin-top: 100px;
+}
+
+.card-new {
+    background-color: #EB5757;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    font-weight: 900;
+    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    line-height: 18px;
+    padding: 0 12px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 0 rgba(225, 106, 0, 0.19);
+}
+
+@media only screen and (max-width: 992px) {
+    .back-btn {
+        margin-bottom: 30px;
+    }
+    .book-img {
+        padding-left: 0;
+    }
+    .book-img img {
+        width: 70%;
+    }
+    .card-new {
+        right: 18%;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .book-info .book-name {
+        font-size: 25px;
+        line-height: 69px;
+        text-align: center;
+    }
+
+    .book-info .author-name {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .book-info .book-days {
+        display: none;
+    }
+
+    .book-info .book-description {
+        font-size: 12px;
+    }
+
+    .comment-section input {
+        margin-right: 10px;
+        padding: 15px 19px;
+        font-size: 14px;
+    }
+    
+    .comment-section button {
+        padding: 0 10px;
+    }
+    
+    .comment-section button img {
+        width: 20px;
+    }
+    
+    .comment-card {
+        padding: 20px 10px;
+    }
+    
+    .comment-author {
+        font-size: 14px;
+        margin-right: 30px;
+    }
+    
+    .comment-time, .comment-body {
+        font-size: 14px;
+    }
+}
+
